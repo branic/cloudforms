@@ -13,7 +13,7 @@
 # Support multiple warning emails.
 # Set the number of days from the retirement date for the next warning.
 def update_retirement_warning(vm)
-  # Get the warning days from the current object. Default to 0 if not found in object
+  # Get the warning days from the current object. Default to 30/7/1 if not found in object
   warn_days_1 = $evm.object['warn_days_1'] || 30
   warn_days_2 = $evm.object['warn_days_2'] || 7
   warn_days_3 = $evm.object['warn_days_3'] || 1
